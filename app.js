@@ -1,18 +1,13 @@
+////melkadze
+
 //step one
-const massRob = 78;
-const massDejon = 92;
-const heightRob = 1.69;
-const heightDejon = 1.95;
+const teamJohnAvg = ((89 + 120 + 103)/3);
+const teamMikeAvg = ((116 + 94 + 123)/3);
 
 //step two
-const bmiRob = (massRob / ((heightRob) * (heightRob)));
-const bmiDejon = (massDejon / ((heightDejon) * (heightDejon)));
-
-//step three
-let robHigherBMI;
-if (bmiRob > bmiDejon) {
-    robHigherBMI = true;
+if (teamJohnAvg === teamMikeAvg) {
+    console.log(`There was a tie. Boo.`);
+} else {
+    console.log(`We have a winner...`);
+    teamJohnAvg > teamMikeAvg ? console.log(`John's team won with an average of ${teamJohnAvg}!!`) : console.log(`Mike's team won with an average of ${teamMikeAvg}!!`); 
 }
-
-//step four
-console.log(`Does Rob, who is ${massRob}kg and ${heightRob}m with a BMI of ${bmiRob}, have a higher BMI than that of Dejon, with ${massDejon}kg and ${heightDejon}m with a BMI of ${bmiDejon}? The answer is ${robHigherBMI}!`);
